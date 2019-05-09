@@ -1,0 +1,85 @@
+ .slider {
+    position: relative;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.slider .item {
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    transition: all 0.7s;
+}
+.slider .item.active {
+    opacity: 1;
+}
+.slider .item img {
+    max-width: 100%;
+}
+
+.slider .prev {
+    position: absolute;
+    left: 0;
+    width: 40px;
+    height: 40px;
+    background: #fff;
+    opacity: 0.4;
+    border-radius: 100%;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-content: center; 
+    cursor: pointer;
+    transition: all 0.5s;
+} 
+.slider .next {
+    position: absolute;
+    right: 0;
+    width: 40px;
+    height: 40px;
+    background: #fff;
+    opacity: 0.4;
+    border-radius: 100%;
+    font-size: 40px;   
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+.slider .next:hover{
+    opacity: 1;
+}
+.slider .prev:hover{
+    opacity: 1;
+}
+.slider .dots {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: -40px;
+    cursor: pointer;
+
+}
+.slider .dots span{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    background: #ccc;
+    margin-right: 10px;
+    transition: all 0.5s;
+    
+}
+
+
+.slider .dots span:hover{
+    background-color:  #aaa;
+}
+.slider .dots span.active{
+    background-color: #e24b70;
+}
